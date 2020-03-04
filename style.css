@@ -1,0 +1,111 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(35, 31, 32);
+}
+
+button{
+    height: 20px;
+    padding: 3px;
+    border:1px solid white;
+    margin-left: 15px;
+    color:white;
+    background-color: transparent;
+}
+
+ul{
+    list-style-type: none;
+    color: #fff;
+}
+li{
+    display: inline;
+    padding-right: 10px;
+    border-right: 1px solid #fff;
+}
+#last{
+    border: 0;
+}
+#video{
+    position: relative;
+    height: 500px;
+}
+#videoText{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: white;
+}
+video{
+    width: 100%;
+}
+#div2{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    color: white;
+    background: rgb(118, 205, 216);
+    /* z-index: 2; */
+}
+span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 400px;
+    color: rgba(247,247,247,0.1);
+}
+#h1{
+    margin: 0;
+    text-align: center;
+    align-self: end;
+    z-index: 2;
+}
+#p1{
+    width: 60%;
+    text-align: center;
+    justify-self: center;
+    z-index: 2;
+}
+#offers{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    position: relative;
+    height: 250px;
+    background-color: rgb(38, 56, 82);
+}
+#offers img{
+    width: 50%;
+    margin: 25%;
+}
+#offers h1{
+    text-align: center;
+    font-size: 12px;
+    color: white;
+}
+#offers p{
+    width: 100px;
+    font-size: 8px;
+    color: white;
+}
+.slide{
+    position: absolute;
+    top: -250px;
+    height: 250px;
+    background-color: red;
+    transition: all .5s;
+    /* z-index: -1; */
+}
+.logo:hover > .slide{
+    top: 0;
+    z-index: 1;
+}
